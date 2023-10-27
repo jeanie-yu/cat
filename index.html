@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Autour+One&family=Pixelify+Sans&display=swap" rel="stylesheet">
+	<style>
+		/* Custom font */
+		@font-face {
+			font-family: 'Pixelify Sans';
+			src: url('DancingScript-VariableFont_wght.ttf');
+		}
+
+		/* Applies to everything */
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: 'Pixelify Sans';
+		}
+
+		/* Basic styling */
+		body {
+			padding: 20px;
+			background-color: cornflowerblue;
+		}
+		h1 {
+			text-align: center;
+			margin-bottom: 40px;
+		}
+
+		/* Grid parent */
+		.archive-container {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			gap: 30px;
+			margin-left: 50px;
+			justify-content: center;
+		}
+
+		/* Archive children */
+		/* (if use flex to center content) */
+		.archive-container div {
+			border: 2px solid gray;
+			background-color: white;
+            border-radius: 50%;
+			padding: 20px;
+			transition: transform 1s, color .5s, font-size .5s;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			gap: 30px;
+			cursor: crosshair;
+            height: 400px;
+            width:400px;
+            color:gray
+		}
+
+		/* Image sizing */
+		.archive-container img {
+			height: 240px;
+		}
+
+		/* Interactivity */
+		.archive-container div:hover {
+			transform: scale(1.5) rotate(5deg);
+            border: 8px solid rgb(170, 130, 255);
+            border-style: dotted;
+            font-size: 18px;
+            color: cornflowerblue;
+		}
+       
+
+	</style>
+</head>
+<body>
+    <h1 style="color:white; font-size: 70px;">Types of Ragdoll Cat</h1>
+    <div class="archive-container">
+        <div>
+			<img src="cat1.jpg">
+			<h2>Seal Lynx Bi-Color</h2>
+		</div>
+        <div>
+			<img src="cat2.jpg">
+			<h2>Seal Lynx Mitted</h2>
+		</div>
+        <div>
+			<img src="cat3.jpg">
+			<h2>Seal Tortie Bi-Color</h2>
+		</div>
+        <div>
+			<img src="cat4.jpg">
+			<h2>Seal Tortie Mitted</h2>
+		</div>
+        <div>
+			<img src="cat5.jpg">
+			<h2>Blue Tortie Bi-Color</h2>
+		</div>
+        <div>
+			<img src="cat6.jpg">
+			<h2>Blue Tortie Mitted</h2>
+		</div>
+        <div>
+			<img src="cat7.jpg">
+			<h2>Cream Tortie Bi-Color</h2>
+		</div>
+        <div>
+			<img src="cat8.jpg">
+			<h2>Cream Tortie Mitted</h2>
+		</div>
+		<div>
+			<img src="cat9.jpg">
+			<h2>Red Tortie Bi-Color</h2>
+		</div>
+        <div>
+			<img src="cat10.jpg">
+			<h2>Red Tortie Mitted</h2>
+		</div>
+        <div>
+			<img src="cat11.jpg">
+			<h2>Seal Tortie Bi-Color</h2>
+		</div>
+        <div>
+			<img src="cat12.jpg">
+			<h2>Seal Tortie Mitted</h2>
+		</div>
+    </div>
+
+
+</body>
+</html>
