@@ -39,15 +39,21 @@
 			margin-left: 50px;
 			justify-content: center;
 		}
+		@media only screen and (max-width: 600px) {
+			.archive-container {
+				grid-template-columns: 1fr;
+				
+			}
+		}
 
 		/* Archive children */
 		/* (if use flex to center content) */
 		.archive-container div {
-			border: 2px solid gray;
+			border: 0px dotted gray;
 			background-color: white;
             border-radius: 50%;
 			padding: 20px;
-			transition: transform 1s, color .5s, font-size .5s;
+			transition: transform 1s, color .5s, font-size .5s, border .5s;
 			display: flex;
 			flex-direction: column;
 			align-items: center;
@@ -56,7 +62,7 @@
 			cursor: crosshair;
             height: 400px;
             width:400px;
-            color:gray
+            color:gray;
 		}
 
 		/* Image sizing */
@@ -67,10 +73,10 @@
 		/* Interactivity */
 		.archive-container div:hover {
 			transform: scale(1.5) rotate(5deg);
-            border: 8px solid rgb(170, 130, 255);
-            border-style: dotted;
+            border: 8px dotted rgb(170, 130, 255);
             font-size: 18px;
             color: cornflowerblue;
+			z-index: 9999999999999;
 		}
        
 
